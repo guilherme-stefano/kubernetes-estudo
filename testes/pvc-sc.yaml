@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClain
+metadata:
+  name: pv-2
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: slow
+
